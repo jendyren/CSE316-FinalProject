@@ -160,7 +160,7 @@ registerUser = async (req, res) => {
         })
 
         console.log("token sent");
-
+        
     } catch (err) {
         console.error(err);
         res.status(500).send();

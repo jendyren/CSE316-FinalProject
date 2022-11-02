@@ -70,6 +70,7 @@ function AuthContextProvider(props) {
     }
 
     auth.registerUser = async function(firstName, lastName, email, password, passwordVerify) {
+        console.log("inside auth.registerUser");
         const response = await api.registerUser(firstName, lastName, email, password, passwordVerify);      
         if (response.status === 200) {
             authReducer({
@@ -78,7 +79,8 @@ function AuthContextProvider(props) {
                     user: response.data.user
                 }
             })
-            history.push("/login");
+            console.log("calling auth.loginUser");
+            auth.loginUser(email, password);
         }
     }
 
