@@ -239,7 +239,7 @@ function GlobalStoreContextProvider(props) {
                                         idNamePairs: pairsArray,
                                         playlist: null
                                     }
-                                });
+                                }); 
                             }
                         }
                         getListPairs(playlist);
@@ -342,6 +342,7 @@ function GlobalStoreContextProvider(props) {
         });        
     }
     store.showRemoveSongModal = (songIndex, songToRemove) => {
+        console.log("Showing remove song modal...");
         storeReducer({
             type: GlobalStoreActionType.REMOVE_SONG,
             payload: {currentSongIndex: songIndex, currentSong: songToRemove}
@@ -448,7 +449,7 @@ function GlobalStoreContextProvider(props) {
     store.addNewSong = () => {
         let playlistSize = store.getPlaylistSize();
         store.addCreateSongTransaction(
-            playlistSize, "Untitled", "?", "dQw4w9WgXcQ");
+            playlistSize, "Untitled", "Unknown", "dQw4w9WgXcQ");
     }
     // THIS FUNCDTION ADDS A CreateSong_Transaction TO THE TRANSACTION STACK
     store.addCreateSongTransaction = (index, title, artist, youTubeId) => {

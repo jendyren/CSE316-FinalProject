@@ -71,6 +71,13 @@ function AuthContextProvider(props) {
                     errorMessage: payload.errorMessage
                 })
             }
+            case AuthActionType.SET_LOGGED_IN: {
+                return setAuth({
+                    user: payload.user,
+                    loggedIn: true,
+                    errorMessage: null
+                })
+            }
             default:
                 return auth;
         }
