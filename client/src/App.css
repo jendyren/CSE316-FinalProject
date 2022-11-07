@@ -316,9 +316,24 @@ input {
 
 }
 
+.modal-prompt {
+	background-color: var(--swatch-complement);
+	font-size: 1.2em;
+	padding: 3% 3%;
+}
+.modal-textfield {
+	width: 80%;
+	margin-left: 3%;
+}
 .modal.is-visible {
   visibility: visible;
   opacity: 1;
+}
+
+.modal-center {
+	background: var(--swatch-complement);
+	padding: 3%;
+	padding-bottom: 8%;
 }
 
 .modal-dialog {

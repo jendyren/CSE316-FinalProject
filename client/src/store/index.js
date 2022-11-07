@@ -251,6 +251,10 @@ function GlobalStoreContextProvider(props) {
         asyncChangeListName(id);
     }
 
+    store.clearAllTransactions = function(){
+        tps.clearAllTransactions();
+    }
+
     // THIS FUNCTION PROCESSES CLOSING THE CURRENTLY LOADED LIST
     store.closeCurrentList = function () {
         storeReducer({

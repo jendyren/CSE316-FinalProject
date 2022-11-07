@@ -74,7 +74,7 @@ function AuthContextProvider(props) {
             case AuthActionType.SET_LOGGED_IN: {
                 return setAuth({
                     user: payload.user,
-                    loggedIn: true,
+                    loggedIn: payload.loggedIn,
                     errorMessage: null
                 })
             }
