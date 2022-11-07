@@ -42,7 +42,7 @@ export default function MUIAlertModal() {
         open={auth.errorMessage !== null}
       >
         <Box sx={style} display="grid" justifyContent="center" alignItems="center">
-          <Alert severity="error" sx={{margin: "10px", mb:2}}>
+          <Alert severity="warning" sx={{margin: "10px", mb:2}}>
           <strong>{errorMessage}</strong>
           </Alert>
           <Button variant="outlined" onClick={handleClose}> 
