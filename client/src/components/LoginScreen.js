@@ -15,6 +15,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import MUIAlertModal from './MUIAlertModal';
 
 export default function LoginScreen() {
     const { auth } = useContext(AuthContext);
@@ -32,6 +33,7 @@ export default function LoginScreen() {
     return (
         <Grid container component="main" sx={{ height: '100vh' }}>
             <CssBaseline />
+            <MUIAlertModal/>
             <Grid
                 item
                 xs={false}
@@ -102,7 +104,7 @@ export default function LoginScreen() {
                                 </Link>
                             </Grid>
                             <Grid item>
-                                <Link href="#" variant="body2">
+                                <Link href="/register/" variant="body2">
                                     {"Don't have an account? Sign Up"}
                                 </Link>
                             </Grid>
