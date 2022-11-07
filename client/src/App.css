@@ -90,7 +90,7 @@ body {
 	background-color: aliceblue;
 	text-align: center;
 	width: 80%;
-	padding: 2% 0;
+	/* padding: 2% 0; */
 }
 .top5-button:hover {
   cursor: pointer;
