@@ -85,13 +85,12 @@ body {
 }
 
 #playlister-statusbar {
-	bottom: 6%;
+	bottom: 5%;
 	position: fixed;
 	background-color: aliceblue;
-	/* justify-content: center; */
-	/* display: grid; */
 	text-align: center;
 	width: 80%;
+	padding: 2% 0;
 }
 .top5-button:hover {
   cursor: pointer;
