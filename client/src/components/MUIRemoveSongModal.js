@@ -53,7 +53,7 @@ export default function MUIRemoveSongModal() {
             </div>
             <div className="modal-center">
                 <div className="modal-center-content">
-                    Are you sure you wish to permanently remove {songTitle} from the playlist?
+                    Are you sure you wish to permanently remove <b>{songTitle}</b> from the playlist?
                 </div>
             </div>
             <div className="modal-south">
